@@ -1,6 +1,8 @@
 package dev.top.controller;
 
+import java.util.Arrays;
 import java.util.List;
+import org.springframework.web.client.RestTemplate;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -30,7 +32,10 @@ public class CollegueCtrl {
 	@PostMapping
 	public void creerCollegue(@RequestBody CreerCollegueForm creerCollegueForm) {
 		// restTemplate
+		RestTemplate restTemplate = new RestTemplate();
 		System.out.println(creerCollegueForm);
+		CollegueApi[] result = restTemplate.getForObject("https://tommy-sjava.cleverapps.io/collegues?matricule="+creerCollegueForm.getMatricule(), CollegueApi[].class);
+		System.out.println(Arrays.toString(result));
 		
 	}
 	
