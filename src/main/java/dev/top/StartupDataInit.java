@@ -27,10 +27,10 @@ public class StartupDataInit {
         this.versionRepo.save(new Version("v3"));
         this.versionRepo.save(new Version("v4"));
         
-        this.collegueRepo.save(new Collegue("Benny",2,"http://i.imgur.com/Zvh8fXX.jpg"));
-        this.collegueRepo.save(new Collegue("Benna",1,"http://fc08.deviantart.net/fs71/i/2010/180/b/f/MEMES__MEMES_EVERYWHERE_by_CaptainWii.png"));
-        this.collegueRepo.save(new Collegue("Benno",0,"https://pbs.twimg.com/media/CdN4vE2VIAAul4R.jpg"));
-        this.collegueRepo.save(new Collegue("Bennu",9,"https://pbs.twimg.com/media/DYrZZckVoAACGz9.jpg:large"));
+        this.collegueRepo.save(new Collegue("Benny",2,"http://i.imgur.com/Zvh8fXX.jpg", "bpayanpsl@gmail.com", "girogoer", "Benjamin", "PAYAN"));
+        this.collegueRepo.save(new Collegue("Benna",1,"http://fc08.deviantart.net/fs71/i/2010/180/b/f/MEMES__MEMES_EVERYWHERE_by_CaptainWii.png", "bpayanpsl@gmail.com", "girogoer", "Benjamin", "PAYAN"));
+        this.collegueRepo.save(new Collegue("Benno",0,"https://pbs.twimg.com/media/CdN4vE2VIAAul4R.jpg", "bpayanpsl@gmail.com", "girogoer", "Benjamin", "PAYAN"));
+        this.collegueRepo.save(new Collegue("Bennu",9,"https://pbs.twimg.com/media/DYrZZckVoAACGz9.jpg:large", "bpayanpsl@gmail.com", "girogoer", "Benjamin", "PAYAN"));
 
     }
 }

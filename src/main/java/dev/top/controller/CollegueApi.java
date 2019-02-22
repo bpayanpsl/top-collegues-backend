@@ -8,5 +8,56 @@ public class CollegueApi {
 	private String email;
 	private String adresse;
 	private String photo;
+	private String pseudo;
+	
+	public String getPseudo() {
+		return pseudo;
+	}
+	public void setPseudo(String pseudo) {
+		this.pseudo = pseudo;
+	}
+	public String getMatricule() {
+		return matricule;
+	}
+	public void setMatricule(String matricule) {
+		this.matricule = matricule;
+	}
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public String getPrenom() {
+		return prenom;
+	}
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getAdresse() {
+		return adresse;
+	}
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
+	}
+	public String getPhoto() {
+		return photo;
+	}
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+	@Override
+	public String toString() {
+		return "CollegueApi [matricule=" + matricule + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email
+				+ ", adresse=" + adresse + ", photo=" + photo + "]";
+	}
+	
+	
 
 }

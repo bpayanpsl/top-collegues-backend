@@ -21,7 +21,77 @@ public class Collegue {
 	
 	@Column
 	private String photoURL;
+	
+	@Column
+	private String email;
+	
+	@Column
+	private String matricule;
+	
+	@Column
+	private String nom;
+	
+	@Column
+	private String prenom;
+	
+	public Collegue(String pseudo, int score, String photoURL, String email, String matricule, String nom,
+			String prenom) {
+		super();
+		this.pseudo = pseudo;
+		this.score = score;
+		this.photoURL = photoURL;
+		this.email = email;
+		this.matricule = matricule;
+		this.nom = nom;
+		this.prenom = prenom;
+	}
 
+	public Collegue(Integer id, String pseudo, int score, String photoURL, String email, String matricule, String nom,
+			String prenom) {
+		super();
+		this.id = id;
+		this.pseudo = pseudo;
+		this.score = score;
+		this.photoURL = photoURL;
+		this.email = email;
+		this.matricule = matricule;
+		this.nom = nom;
+		this.prenom = prenom;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getMatricule() {
+		return matricule;
+	}
+
+	public void setMatricule(String matricule) {
+		this.matricule = matricule;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	
 	public Collegue(String pseudo, int score, String photoURL) {
 		super();
 		this.pseudo = pseudo;
